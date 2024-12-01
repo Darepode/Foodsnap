@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Foodsnap</string>
+    <string name="use_camera">Snap food now!</string>
+    <string name="send_to_laptop">Process</string>
+    <string name="show_information">See Food Information</string>
+    <string name="no_data_received">No data received yet</string>
+    <string name="image_preview_description">Preview of the captured image</string>
+    <string name="image_sent">Image sent successfully! Response: %1$s</string>
+    <string name="no_image_to_send">No image to send. Please capture an image first.</string>
+    <string name="info_received">Information received: %1$s</string>
+    <string name="no_image_available">No image available. Capture and send first.</string>
+    <string name="display">Server response will be displayed here</string>
+    <string name="no_info_received">No info from the server</string>
+</resources>

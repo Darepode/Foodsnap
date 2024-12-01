@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lively and Vibrant Colors -->
+    <color name="lively_red">#FF3B30</color>       <!-- Bright Red -->
+    <color name="lively_orange">#FF9500</color>    <!-- Vibrant Orange -->
+    <color name="lively_yellow">#FFCC00</color>    <!-- Sunny Yellow -->
+    <color name="lively_green">#34C759</color>     <!-- Fresh Green -->
+    <color name="lively_teal">#5AC8FA</color>      <!-- Bright Teal -->
+    <color name="lively_blue">#007AFF</color>      <!-- Electric Blue -->
+    <color name="lively_purple">#5856D6</color>    <!-- Bright Purple -->
+    <color name="lively_pink">#FF2D55</color>      <!-- Hot Pink -->
+    <color name="lively_cyan">#00D4FF</color>      <!-- Cyan -->
+    <color name="lively_lime">#C7F464</color>      <!-- Lime Green -->
+    <color name="lively_magenta">#FF007F</color>   <!-- Magenta -->
+    <color name="lively_aqua">#00FFFF</color>      <!-- Aqua Blue -->
+    <color name="lively_gold">#FFD700</color>      <!-- Gold -->
+    <color name="lively_coral">#FF6F61</color>     <!-- Coral -->
+    <color name="lively_indigo">#4B0082</color>    <!-- Indigo -->
+
+    <color name="shade_darker">#c6b6a9</color>        <!-- Tối hơn -->
+    <color name="shade_lighter">#5d737e</color>       <!-- Sáng hơn -->
+    <color name="shade_muted">#896666</color>         <!-- Nhạt đi -->
+    <color name="shade_warm_gray">#a2b3ba</color>     <!-- Pha thêm chút ấm -->
+    <color name="shade_cool_gray">#776871</color>     <!-- Pha thêm chút lạnh -->
+    <color name="shade_highlight">#525F73</color>     <!-- Sáng và bão hòa hơn -->
+
+
+    <!-- Supporting Neutral Colors -->
+    <color name="white">#FFFFFF</color>            <!-- White -->
+    <color name="black">#000000</color>            <!-- Black -->
+    <color name="light_gray">#D3D3D3</color>       <!-- Light Gray -->
+    <color name="dark_gray">#4A4A4A</color>        <!-- Dark Gray -->
+</resources>

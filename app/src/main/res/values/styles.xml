@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/lively_cyan</item>
+        <item name="colorPrimaryVariant">@color/lively_blue</item>
+        <item name="colorOnPrimary">@color/lively_blue</item>
+    </style>
+
+
+
+</resources>

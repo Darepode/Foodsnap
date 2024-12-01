@@ -1,0 +1,186 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Box for the Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Item Text -->
+            <TextView
+                android:id="@+id/textViewInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- Image Below the Item -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Image preview" />
+        </LinearLayout>
+
+        <!-- Box for Confidence Details -->
+        <LinearLayout
+            android:id="@+id/roundedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Text Section on the Left -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Image processed successfully"
+                    android:textSize="17sp"
+                    android:textColor="@color/light_gray"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/textFilename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filename: example.jpg"
+                    android:textSize="17sp"
+                    android:textColor="@color/light_gray"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/textTimestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timestamp: 2024-11-19 10:00:00"
+                    android:textSize="17sp"
+                    android:textColor="@color/light_gray" />
+            </LinearLayout>
+
+            <!-- Circular Progress Section -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Circular Progress View -->
+                <com.example.test.CircularProgressView
+                    android:id="@+id/circularProgressView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Box for Tabs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="8dp">
+
+            <!-- TabLayout for Switching Tabs -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#313747"
+                android:layout_marginBottom="8dp" />
+
+            <!-- ViewPager2 for Tab Content -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <!-- LinearLayout for Nutritional Values -->
+            <LinearLayout
+                android:id="@+id/nutritionalValuesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Cook it Box -->
+        <LinearLayout
+            android:id="@+id/cookItBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal">
+
+            <!-- Image on the left -->
+            <ImageView
+                android:id="@+id/cookImage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/chef"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Cook Icon" />
+
+            <!-- Text on the right -->
+            <TextView
+                android:id="@+id/cookItText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Cooking"
+                android:textSize="18sp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/light_gray"
+                android:gravity="center" />
+
+            <!-- Image on the left -->
+            <ImageView
+                android:id="@+id/cookImage2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/chef"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Cook Icon" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:text="Back"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+</ScrollView>
